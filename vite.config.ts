@@ -3,7 +3,7 @@ import { loadEnv } from "vite";
 import { createVitePlugins } from "./build/vite/plugin";
 import { wrapperEnv } from "./build/utils";
 import { resolve } from "path";
-// https://vitejs.dev/config/
+
 function pathResolve(dir: string) {
   return resolve(process.cwd(), ".", dir);
 }
@@ -27,9 +27,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     },
     css: {
       preprocessorOptions: {
-        // 全局引入了 scss 的文件
         scss: {
-          // 添加你的全局共享scss文件
           additionalData: ``,
           javascriptEnabled: true,
         },

@@ -5,10 +5,9 @@ import localCache from '@/utils/cache'
 
 const request = new Request({
   baseURL: '',
-  timeout: 60000,
+  timeout: 50000,
   interceptors: {
     requestInterceptor: (config: any) => {
-      // 携带token的拦截
       const token = localCache.getCache('token')
       // console.log(token)
 

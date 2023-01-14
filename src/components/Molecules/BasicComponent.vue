@@ -1,8 +1,13 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
-  <main>
-    首頁
-  </main>
+	<div>
+		initial
+	</div>
 </template>
+
+<style lang="scss">
+
+</style>
